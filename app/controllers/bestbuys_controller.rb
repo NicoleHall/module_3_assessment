@@ -1,11 +1,11 @@
 class BestbuysController < ApplicationController
 
-  def show
+  def new
 
   end
 
   def results
-    BestbuyService.new.query_by_decription(params: ["query"])
+    @results = BestbuyService.new.query_by_decription(params["query"])
   end
 
 end

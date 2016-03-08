@@ -1,0 +1,7 @@
+<h1>what would you like to search for</h1>
+<%= form_for @bestbuy do |f| %>
+  <%= f.label :item_decription %>:
+  <%= f.text_field :item_decription %><br />
+
+  <%= f.submit("search") %>
+<% end %>

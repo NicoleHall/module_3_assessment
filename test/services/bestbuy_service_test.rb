@@ -8,4 +8,5 @@ class BestbuyServiceTest < ActiveSupport::TestCase
       assert_equal 15, BestbuyService.new.query_by_decription(query).count
     end
   end
+  
 end

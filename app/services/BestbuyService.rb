@@ -10,3 +10,4 @@ class BestbuyService
     response = conn.get("/v1/products(longDescription=#{query})?show=sku,name&pageSize=15&page=5&apiKey=#{@api_key}&format=json")
     response.body
   end
+end
