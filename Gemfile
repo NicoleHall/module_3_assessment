@@ -13,6 +13,7 @@ gem "haml-rails"
 gem "therubyracer"
 gem "less-rails-bootstrap"
 gem "minitest-rails"
+gem "responders"
 
 group :development do
   gem "spring"
