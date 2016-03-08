@@ -12,4 +12,10 @@ class Api::V1::ItemsController < ApplicationController
    respond_with item_hash
  end
 
+
+ def destroy
+   respond_with Item.delete(params[:id])
+
+ end
+
 end

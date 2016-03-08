@@ -15,4 +15,10 @@ class Api::V1::ItemsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+  test '#destr' do
+    create_two_items
+    delete :show, format: :json, id: 1
+    assert_response :no_content
+  end
+
 end
