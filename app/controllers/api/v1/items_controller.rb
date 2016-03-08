@@ -18,4 +18,15 @@ class Api::V1::ItemsController < ApplicationController
 
  end
 
+ def create
+   new_item = Item.create(item_params)
+   respond_with new_item
+ end
+
+ private
+
+ def item_params
+  params.require(:item).permit(:name, :description, :image_url)
+ end
+
 end
