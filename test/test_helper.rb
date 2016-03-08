@@ -14,6 +14,24 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+
+  def create_two_items
+    Item.create(id: 1,
+      name: "Ergonomic Steel Bottle",
+      description: "Sint quasi modi officiis.",
+      image_url: "http://robohash.org/0.png?set=set2&bgset=bg1&size",
+      created_at: "2016-03-08 14:53:57",
+      updated_at: "2016-03-08 14:53:57")
+
+    Item.create(id: 2,
+      name: "Ergonomic Steel Hat",
+      description: "Sint quasi modi officiis.",
+      image_url: "http://robohash.org/0.png?set=set2&bgset=bg1&size",
+      created_at: "2016-03-08 14:53:57",
+      updated_at: "2016-03-08 14:53:57")
+  end
+
+
 end
 
 class ActionDispatch::IntegrationTest
