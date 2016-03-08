@@ -1,0 +1,2 @@
+module BestbuysHelper
+end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :items,  only: [:index, :show]
   resources :orders, only: [:index, :show]
   resources :users,  only: [:index, :show]
+  resources :bestbuys, only: [:show, :results]
 
     namespace :api, defaults: { format: :json } do
     namespace :v1  do
