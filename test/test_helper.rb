@@ -7,6 +7,11 @@ require "minitest/rails/capybara"
 class ActiveSupport::TestCase
   ActiveRecord::Migration.check_pending!
 
+  VCR.configure do |config|
+    config.cassette_library_dir = 'test/cassettes'
+    config.hook_into :webmock
+  end
+
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   #
   # Note: You'll currently still have to declare fixtures explicitly in integration tests
