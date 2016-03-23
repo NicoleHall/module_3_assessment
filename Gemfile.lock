@@ -31,6 +31,12 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.4.0)
     arel (5.0.1.20140414130214)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
     capybara (2.6.2)
       addressable
@@ -50,6 +56,7 @@ GEM
     commonjs (0.2.7)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
+    debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (2.6.0)
     faker (1.6.3)
@@ -194,6 +201,8 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers
+  better_errors
+  binding_of_caller
   coffee-rails (~> 4.0.0)
   faker
   faraday

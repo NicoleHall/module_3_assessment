@@ -1,5 +1,5 @@
 <h1>what would you like to search for</h1>
-<%= form_for(@bestbuy, url: {action: "results"}) do |f| %>
+<%= form_for(:bestbuy, url: {action: "results"}) do |f| %>
   <%= f.label :item_decription %>:
   <%= f.text_field :item_decription %><br />
 

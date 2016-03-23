@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :orders, only: [:index, :show]
   resources :users,  only: [:index, :show]
   resources :bestbuys, only: [:new]
-  get 'bestbuys/results', to: "bestbuys#results"
+  post 'bestbuys/results', to: "bestbuys#results"
 
     namespace :api, defaults: { format: :json } do
     namespace :v1  do
